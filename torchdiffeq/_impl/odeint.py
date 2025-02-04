@@ -1,6 +1,7 @@
 import torch
 from torch.autograd.functional import vjp
 from .dopri5 import Dopri5Solver
+from .bilal4 import Bilal4Solver
 from .bosh3 import Bosh3Solver
 from .adaptive_heun import AdaptiveHeunSolver
 from .fehlberg2 import Fehlberg2
@@ -13,6 +14,7 @@ from .interp import _interp_evaluate
 
 SOLVERS = {
     'dopri8': Dopri8Solver,
+    'bilal4': Bilal4Solver,
     'dopri5': Dopri5Solver,
     'bosh3': Bosh3Solver,
     'fehlberg2': Fehlberg2,
